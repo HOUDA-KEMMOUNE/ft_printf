@@ -6,7 +6,7 @@
 /*   By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 00:37:36 by hkemmoun          #+#    #+#             */
-/*   Updated: 2024/11/24 01:43:21 by hkemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/24 16:40:12 by hkemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int		print_char(int c);
 int		print_str(char *s);
 int		print_nbr(int n);
 int		print_unsigned(unsigned int n);
+int		print_hex(int n, char low_upp);
 
 #endif

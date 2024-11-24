@@ -6,7 +6,7 @@
 /*   By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 00:06:56 by hkemmoun          #+#    #+#             */
-/*   Updated: 2024/11/24 00:08:15 by hkemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/24 12:30:38 by hkemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ static int	print_format(char specifier, va_list args)
 	else if (specifier == 'd' || specifier == 'i')
 		count += print_nbr(va_arg(specifier, int));
 	else if (specifier == 'x')
-		count += print_lower_hex(va_arg(specifier, int));
+		count += print_hex(va_arg(specifier, int), 'x');
 	else if (specifier == 'X')
-		count += print_upper_hex(va_arg(specifier, int));
+		count += print_hex(va_arg(specifier, int), 'X');
 	else if (specifier == 'u')
 		count += print_unsigned(va_arg(specifier, unsigned int));
 	else
