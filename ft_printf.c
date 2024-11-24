@@ -6,7 +6,7 @@
 /*   By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 00:06:56 by hkemmoun          #+#    #+#             */
-/*   Updated: 2024/11/24 17:22:40 by hkemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/24 17:26:40 by hkemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int	print_format(char specifier, va_list args)
 		count += print_hex(va_arg(args, int), 'X');
 	else if (specifier == 'u')
 		count += print_unsigned(va_arg(args, unsigned int));
+	else if (specifier == 'p')
+		count += print_address(va_arg(args, void *));
 	else
 		count += write(1, "%", 1);
 	return (count);	
