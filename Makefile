@@ -6,18 +6,18 @@
 #    By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/24 00:05:27 by hkemmoun          #+#    #+#              #
-#    Updated: 2024/11/24 00:07:38 by hkemmoun         ###   ########.fr        #
+#    Updated: 2024/11/24 17:02:55 by hkemmoun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRC = ft_printf.c
+SRC = ft_printf.c print_char.c print_nbr.c print_str.c print_hex.c print_unsigned.c main.c
 OBJ = $(SRC:.c=.o)
 EXE = a.out
 
-all: $(NAME)
+all: $(NAME) $(EXE)
 
 $(NAME): $(OBJ)
 	@ar rcs $@ $(OBJ)
@@ -26,12 +26,12 @@ $(NAME): $(OBJ)
 	@$(CC) -c $(CFLAGS) $< -o $@
 
 $(EXE): $(SRC)
-	$(CC) $(CFLAGS) $^ -o $@
+	@$(CC) $(CFLAGS) $^ -o $@
 
 clean:
-	rm -rf $(OBJ)
+	@rm -rf $(OBJ)
 
 fclean: clean
-	rm -rf $(NAME) $(EXE)
+	@rm -rf $(NAME) $(EXE)
 
 re: fclean all
