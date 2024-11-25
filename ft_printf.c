@@ -6,7 +6,7 @@
 /*   By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 00:06:56 by hkemmoun          #+#    #+#             */
-/*   Updated: 2024/11/24 17:26:40 by hkemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/25 20:59:48 by hkemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ int	ft_printf(const char *format, ...)
 	va_list	args;
 	int	count;
 
+	if (!format)
+		return (-1);
 	va_start(args, format);
 	count = 0;
 	while (*format != '\0')
