@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf_lib.h                                       :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 00:37:36 by hkemmoun          #+#    #+#             */
-/*   Updated: 2024/11/26 14:21:23 by hkemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/26 16:23:36 by hkemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		print_char(int c);
 int		print_str(char *s);
 int		print_nbr(int n);
 int		print_unsigned(unsigned int n);
-int		print_hex(unsigned long int n, char low_upp);
+int		print_hex(unsigned int n, char low_upp);
 int		print_address(void *ptr);
 
 #endif
