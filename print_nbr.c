@@ -6,11 +6,11 @@
 /*   By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 00:38:46 by hkemmoun          #+#    #+#             */
-/*   Updated: 2024/11/24 01:24:26 by hkemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/26 14:23:52 by hkemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf_lib.h"
+#include "ft_printf.h"
 
 static int	count_n(int n)
 {

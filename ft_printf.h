@@ -6,12 +6,12 @@
 /*   By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 00:37:36 by hkemmoun          #+#    #+#             */
-/*   Updated: 2024/11/26 06:59:44 by hkemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/26 14:21:23 by hkemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_LIB_H
-# define PRINTF_LIB_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdio.h>
 # include <stdlib.h>

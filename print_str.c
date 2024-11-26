@@ -6,11 +6,11 @@
 /*   By: hkemmoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 00:30:11 by hkemmoun          #+#    #+#             */
-/*   Updated: 2024/11/24 00:38:11 by hkemmoun         ###   ########.fr       */
+/*   Updated: 2024/11/26 14:24:04 by hkemmoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf_lib.h"
+#include "ft_printf.h"
 
 int	print_str(char *s)
 {
